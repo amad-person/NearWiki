@@ -8,6 +8,8 @@ class LandmarkList extends Component {
                 <Landmark
                     key={index}
                     landmarkName={landmark.landmarkName}
+                    routeURL={landmark.routeURL}
+                    wikiURL={landmark.wikiURL}
                 />
             );
         });
