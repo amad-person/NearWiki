@@ -3,6 +3,10 @@ import Map from "../components/Map";
 import SplashScreen from "../components/SplashScreen";
 import LandmarkList from "../components/LandmarkList";
 import { geolocated } from "react-geolocated";
+import { Item } from "semantic-ui-react";
+import location_support from "../assets/my_location.svg";
+import location_access from "../assets/confirm.svg";
+import location_search from "../assets/location_search.svg";
 import "semantic-ui-css/semantic.min.css";
 import "./App.css";
 
@@ -10,30 +14,65 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      landmarkLocations: []
+      landmarks: [
+        {
+          imgUrl: "https://react.semantic-ui.com/images/wireframe/image.png",
+          landmarkName: "Landmark 1",
+          location: "10 blocks away",
+          routeUrl: "",
+          wikiUrl: ""
+        },
+        {
+          imgUrl: "https://react.semantic-ui.com/images/wireframe/image.png",
+          landmarkName: "Landmark 2",
+          location: "10 blocks away",
+          routeUrl: "",
+          wikiUrl: ""
+        },
+        {
+          imgUrl: "https://react.semantic-ui.com/images/wireframe/image.png",
+          landmarkName: "Landmark 3",
+          location: "10 blocks away",
+          routeUrl: "",
+          wikiUrl: ""
+        }
+      ]
     };
   }
 
   render() {
-    return !this.props.isGeolocationAvailable ? (
-      <SplashScreen
-        message={"Your browser does not support the Geolocation API."}
-      />
-    ) : !this.props.isGeolocationEnabled ? (
-      <SplashScreen message={"Geolocation is not enabled."} />
-    ) : this.props.coords ? (
-      <div>
-        <Map coords={this.props.coords} />
-        <LandmarkList
-          landmarks={[
-            { landmarkName: "landmark 1" },
-            { landmarkName: "landmark 2" }
-          ]}
+    if (!this.props.isGeolocationAvailable) {
+      return (
+        <SplashScreen
+          svg={location_support}
+          message={"Your browser does not support the Geolocation API."}
         />
-      </div>
-    ) : (
-      <SplashScreen message={"Getting location data..."} />
-    );
+      );
+    } else if (!this.props.isGeolocationEnabled) {
+      return (
+        <SplashScreen
+          svg={location_access}
+          message={"Please enable location access."}
+        />
+      );
+    } else if (this.props.coords) {
+      // TODO: update state with landmarks
+      return (
+        <div>
+          <Map coords={this.props.coords} />
+          <Item.Group className="landmarkList" divided unstackable>
+            <LandmarkList landmarks={this.state.landmarks} />
+          </Item.Group>
+        </div>
+      );
+    } else {
+      return (
+        <SplashScreen
+          svg={location_search}
+          message={"Getting location data..."}
+        />
+      );
+    }
   }
 }
 

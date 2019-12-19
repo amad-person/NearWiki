@@ -1,5 +1,24 @@
 .splashScreen {
-  border: 1px solid black;
+  text-align: center;
+}
+
+.splashScreen-svg {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.splashScreen-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.splashScreen-text {
   padding: 1em;
-  margin: 1em;
+  color: #4285f4;
+  font-weight: bold;
 }

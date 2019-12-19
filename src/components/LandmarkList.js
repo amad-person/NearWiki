@@ -7,9 +7,11 @@ class LandmarkList extends Component {
       return (
         <Landmark
           key={index}
+          landmarkImgUrl={landmark.imgUrl}
           landmarkName={landmark.landmarkName}
-          routeURL={landmark.routeURL}
-          wikiURL={landmark.wikiURL}
+          location={landmark.location}
+          routeUrl={landmark.routeUrl}
+          wikiUrl={landmark.wikiUrl}
         />
       );
     });
