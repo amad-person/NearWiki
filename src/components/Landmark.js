@@ -1,22 +1,30 @@
-import React from "react";
+import React, { Component } from "react";
+import { Button, Item } from "semantic-ui-react";
 import "./Landmark.css";
 
-const landmark = props => {
-  return (
-    <div className="landmark">
-      {props.landmarkName}
-      <div className="routeURL">
-        {props.routeURL !== null && props.routeURL !== undefined
-          ? props.routeURL
-          : "No route found."}
-      </div>
-      <div className="wikiURL">
-        {props.wikiURL !== null && props.wikiURL !== undefined
-          ? props.wikiURL
-          : "No Wikipedia entry found. You can ask to create one."}
-      </div>
-    </div>
-  );
-};
+class Landmark extends Component {
+  render() {
+    return (
+      <Item className="landmark">
+        <Item.Image src={this.props.landmarkImgUrl} />
+        <Item.Content verticalAlign="bottom">
+          <Item.Header>{this.props.landmarkName}</Item.Header>
+          <Item.Meta>
+            <span className="location">{this.props.location}</span>
+          </Item.Meta>
+          <Item.Extra>
+            <Button
+              icon="external alternate"
+              content="Open in Maps"
+              labelPosition="right"
+              floated="right"
+            />
+            <Button icon="wikipedia w" floated="right" />
+          </Item.Extra>
+        </Item.Content>
+      </Item>
+    );
+  }
+}
 
-export default landmark;
+export default Landmark;
