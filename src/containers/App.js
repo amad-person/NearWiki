@@ -57,6 +57,7 @@ class App extends Component {
       );
     } else if (this.props.coords) {
       // TODO: update state with landmarks
+      console.log(this.props.coords);
       return (
         <div>
           <Map coords={this.props.coords} />
@@ -69,7 +70,7 @@ class App extends Component {
       return (
         <SplashScreen
           svg={location_search}
-          message={"Getting location data..."}
+          message={"Finding landmarks near you..."}
         />
       );
     }
