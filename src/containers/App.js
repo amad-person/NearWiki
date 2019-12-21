@@ -56,7 +56,36 @@ class App extends Component {
         />
       );
     } else if (this.props.coords) {
-      // TODO: update state with landmarks
+      let url = "https://en.wikipedia.org/w/api.php";
+      let coord =
+        this.props.coords.latitude + "|" + this.props.coords.longitude;
+
+      let params = {
+        action: "query",
+        generator: "geosearch",
+        prop: "coordinates|pageimages",
+        ggscoord: coord,
+        ggsradius: 1000,
+        format: "json"
+      };
+
+      url = url + "?origin=*";
+      Object.keys(params).forEach(function(key) {
+        url += "&" + key + "=" + params[key];
+      });
+
+      fetch(url)
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(response) {
+          let pages = response.query.pages;
+          console.log(pages);
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+
       console.log(this.props.coords);
       return (
         <div>
