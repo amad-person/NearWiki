@@ -3,15 +3,12 @@ import Landmark from "./Landmark";
 
 class LandmarkList extends Component {
   render() {
-    return this.props.landmarks.map((landmark, index) => {
+    return Object.keys(this.props.landmarks).map(landmarkKey => {
       return (
         <Landmark
-          key={index}
-          landmarkImgUrl={landmark.imgUrl}
-          landmarkName={landmark.landmarkName}
-          location={landmark.location}
-          routeUrl={landmark.routeUrl}
-          wikiUrl={landmark.wikiUrl}
+          key={this.props.landmarks[landmarkKey].pageid}
+          landmark={this.props.landmarks[landmarkKey]}
+          userLocation={this.props.userLocation}
         />
       );
     });
