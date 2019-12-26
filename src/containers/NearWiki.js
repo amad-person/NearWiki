@@ -29,6 +29,7 @@ class NearWiki extends Component {
       piprop: "original",
       ggscoord: coord,
       ggsradius: 2000,
+      ggslimit: 20,
       format: "json"
     };
 
@@ -43,11 +44,11 @@ class NearWiki extends Component {
         return response.json();
       })
       .then(function(response) {
+        console.log(response);
         let pages = response.query.pages;
         that.setState({
           landmarks: pages
         });
-        console.log(pages);
       })
       .catch(function(error) {
         console.log(error);

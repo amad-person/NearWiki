@@ -20,6 +20,20 @@ class Landmark extends Component {
     return distanceInMeters + " metres away";
   }
 
+  getStrWithDelimiter(str, delimiter) {
+    return str.split(" ").join(delimiter);
+  }
+
+  getWikiUrl(landmark) {
+    const searchQuery = this.getStrWithDelimiter(landmark.title, "_");
+    return `https://www.wikipedia.org/wiki/${searchQuery}`;
+  }
+
+  getMapsUrl(landmark) {
+    const searchQuery = this.getStrWithDelimiter(landmark.title, "+");
+    return `https://www.google.com/maps/search/${searchQuery}`;
+  }
+
   render() {
     let landmarkImgUrl =
       "https://react.semantic-ui.com/images/wireframe/image.png";
@@ -27,20 +41,26 @@ class Landmark extends Component {
       landmarkImgUrl = this.props.landmark.original.source;
     }
 
-    let landmarkDistance = this.getDistanceFromUserLocation(
-      this.props.landmark.coordinates
-    );
+    let landmarkDistance = "";
+    if (this.props.landmark.coordinates) {
+      landmarkDistance = this.getDistanceFromUserLocation(
+        this.props.landmark.coordinates
+      );
+    }
 
     let description = "";
     if (this.props.landmark.description) {
       description = this.props.landmark.description.toTitleCase();
     }
 
+    let wikiUrl = this.getWikiUrl(this.props.landmark);
+    let mapsUrl = this.getMapsUrl(this.props.landmark);
+
     return (
       <Item className="landmark">
         <Item.Image src={landmarkImgUrl} size="small" />
         <Item.Content verticalAlign="bottom">
-          <Item.Header>{this.props.landmark.title}</Item.Header>
+          <Item.Header>{this.props.landmark.title.toTitleCase()}</Item.Header>
           <Item.Meta>
             <span className="location">{landmarkDistance}</span>
           </Item.Meta>
@@ -48,11 +68,20 @@ class Landmark extends Component {
           <Item.Extra>
             <Button
               icon="external alternate"
-              content="Open in Maps"
+              content="Google Maps"
               labelPosition="right"
               floated="right"
+              as="a"
+              href={mapsUrl}
+              target="_blank"
             />
-            <Button icon="wikipedia w" floated="right" />
+            <Button
+              icon="wikipedia w"
+              floated="right"
+              as="a"
+              href={wikiUrl}
+              target="_blank"
+            />
           </Item.Extra>
         </Item.Content>
       </Item>
