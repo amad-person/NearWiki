@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94b4588f6d5fac5d550a1b5865965161",
+    "revision": "215208bc03e03bdf950db855bac80eb2",
     "url": "/NearWiki/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NearWiki/static/css/2.447252e7.chunk.css"
   },
   {
-    "revision": "7f47e34141286cce9c72",
+    "revision": "ffea6fd632b6ee7f28f2",
     "url": "/NearWiki/static/css/main.b4200ac3.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NearWiki/static/js/2.783b3959.chunk.js.LICENSE"
   },
   {
-    "revision": "7f47e34141286cce9c72",
-    "url": "/NearWiki/static/js/main.b197a33f.chunk.js"
+    "revision": "ffea6fd632b6ee7f28f2",
+    "url": "/NearWiki/static/js/main.bac7a60f.chunk.js"
   },
   {
     "revision": "f1be0a7830c46babda81",
