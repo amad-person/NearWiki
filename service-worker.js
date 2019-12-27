@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/NearWiki/precache-manifest.029db9047827f5793eeaa345ad1de0e0.js"
+  "/NearWiki/precache-manifest.86b4bc5579bbafb0315a38f536477f28.js"
 );
 
 self.addEventListener('message', (event) => {

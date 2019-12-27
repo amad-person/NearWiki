@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "215208bc03e03bdf950db855bac80eb2",
+    "revision": "9b1341e2deb8ad8940d6a32884b09809",
     "url": "/NearWiki/index.html"
   },
   {
-    "revision": "7d70492aa2cf5f8f6386",
-    "url": "/NearWiki/static/css/2.447252e7.chunk.css"
+    "revision": "ff2e09e1d3c7db86c491",
+    "url": "/NearWiki/static/css/2.d83d7134.chunk.css"
   },
   {
-    "revision": "ffea6fd632b6ee7f28f2",
+    "revision": "72284437f8e11540831f",
     "url": "/NearWiki/static/css/main.b4200ac3.chunk.css"
   },
   {
-    "revision": "7d70492aa2cf5f8f6386",
-    "url": "/NearWiki/static/js/2.783b3959.chunk.js"
+    "revision": "ff2e09e1d3c7db86c491",
+    "url": "/NearWiki/static/js/2.dfdea2e9.chunk.js"
   },
   {
     "revision": "b8724743c336de7185371245adfc5df1",
-    "url": "/NearWiki/static/js/2.783b3959.chunk.js.LICENSE"
+    "url": "/NearWiki/static/js/2.dfdea2e9.chunk.js.LICENSE"
   },
   {
-    "revision": "ffea6fd632b6ee7f28f2",
-    "url": "/NearWiki/static/js/main.bac7a60f.chunk.js"
+    "revision": "72284437f8e11540831f",
+    "url": "/NearWiki/static/js/main.e02d715c.chunk.js"
   },
   {
     "revision": "f1be0a7830c46babda81",

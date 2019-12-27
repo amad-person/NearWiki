@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/NearWiki/static/css/main.b4200ac3.chunk.css",
-    "main.js": "/NearWiki/static/js/main.bac7a60f.chunk.js",
-    "main.js.map": "/NearWiki/static/js/main.bac7a60f.chunk.js.map",
+    "main.js": "/NearWiki/static/js/main.e02d715c.chunk.js",
+    "main.js.map": "/NearWiki/static/js/main.e02d715c.chunk.js.map",
     "runtime-main.js": "/NearWiki/static/js/runtime-main.76c7668e.js",
     "runtime-main.js.map": "/NearWiki/static/js/runtime-main.76c7668e.js.map",
-    "static/css/2.447252e7.chunk.css": "/NearWiki/static/css/2.447252e7.chunk.css",
-    "static/js/2.783b3959.chunk.js": "/NearWiki/static/js/2.783b3959.chunk.js",
-    "static/js/2.783b3959.chunk.js.map": "/NearWiki/static/js/2.783b3959.chunk.js.map",
+    "static/css/2.d83d7134.chunk.css": "/NearWiki/static/css/2.d83d7134.chunk.css",
+    "static/js/2.dfdea2e9.chunk.js": "/NearWiki/static/js/2.dfdea2e9.chunk.js",
+    "static/js/2.dfdea2e9.chunk.js.map": "/NearWiki/static/js/2.dfdea2e9.chunk.js.map",
     "index.html": "/NearWiki/index.html",
-    "precache-manifest.029db9047827f5793eeaa345ad1de0e0.js": "/NearWiki/precache-manifest.029db9047827f5793eeaa345ad1de0e0.js",
+    "precache-manifest.86b4bc5579bbafb0315a38f536477f28.js": "/NearWiki/precache-manifest.86b4bc5579bbafb0315a38f536477f28.js",
     "service-worker.js": "/NearWiki/service-worker.js",
-    "static/css/2.447252e7.chunk.css.map": "/NearWiki/static/css/2.447252e7.chunk.css.map",
+    "static/css/2.d83d7134.chunk.css.map": "/NearWiki/static/css/2.d83d7134.chunk.css.map",
     "static/css/main.b4200ac3.chunk.css.map": "/NearWiki/static/css/main.b4200ac3.chunk.css.map",
-    "static/js/2.783b3959.chunk.js.LICENSE": "/NearWiki/static/js/2.783b3959.chunk.js.LICENSE",
+    "static/js/2.dfdea2e9.chunk.js.LICENSE": "/NearWiki/static/js/2.dfdea2e9.chunk.js.LICENSE",
     "static/media/semantic.min.css": "/NearWiki/static/media/outline-icons.ef60a4f6.woff",
     "static/media/confirm.svg": "/NearWiki/static/media/confirm.da01aa0e.svg",
     "static/media/location_search.svg": "/NearWiki/static/media/location_search.a9bf295f.svg",
@@ -21,9 +21,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.76c7668e.js",
-    "static/css/2.447252e7.chunk.css",
-    "static/js/2.783b3959.chunk.js",
+    "static/css/2.d83d7134.chunk.css",
+    "static/js/2.dfdea2e9.chunk.js",
     "static/css/main.b4200ac3.chunk.css",
-    "static/js/main.bac7a60f.chunk.js"
+    "static/js/main.e02d715c.chunk.js"
   ]
 }
