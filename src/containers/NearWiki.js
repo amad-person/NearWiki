@@ -44,7 +44,6 @@ class NearWiki extends Component {
         return response.json();
       })
       .then(function(response) {
-        console.log(response);
         let pages = response.query.pages;
         that.setState({
           landmarks: pages
@@ -64,7 +63,7 @@ class NearWiki extends Component {
   render() {
     return (
       <div>
-        <Map coords={this.props.coords} />
+        <Map landmarks={this.state.landmarks} coords={this.props.coords} />
         <Item.Group className="landmarkList" divided unstackable>
           <LandmarkList
             landmarks={this.state.landmarks}
