@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/NearWiki/static/css/main.b4200ac3.chunk.css",
-    "main.js": "/NearWiki/static/js/main.e02d715c.chunk.js",
-    "main.js.map": "/NearWiki/static/js/main.e02d715c.chunk.js.map",
+    "main.js": "/NearWiki/static/js/main.e44f82de.chunk.js",
+    "main.js.map": "/NearWiki/static/js/main.e44f82de.chunk.js.map",
     "runtime-main.js": "/NearWiki/static/js/runtime-main.76c7668e.js",
     "runtime-main.js.map": "/NearWiki/static/js/runtime-main.76c7668e.js.map",
     "static/css/2.d83d7134.chunk.css": "/NearWiki/static/css/2.d83d7134.chunk.css",
     "static/js/2.dfdea2e9.chunk.js": "/NearWiki/static/js/2.dfdea2e9.chunk.js",
     "static/js/2.dfdea2e9.chunk.js.map": "/NearWiki/static/js/2.dfdea2e9.chunk.js.map",
     "index.html": "/NearWiki/index.html",
-    "precache-manifest.86b4bc5579bbafb0315a38f536477f28.js": "/NearWiki/precache-manifest.86b4bc5579bbafb0315a38f536477f28.js",
+    "precache-manifest.85f0f2c53643fc3e39eba64b0e58934d.js": "/NearWiki/precache-manifest.85f0f2c53643fc3e39eba64b0e58934d.js",
     "service-worker.js": "/NearWiki/service-worker.js",
     "static/css/2.d83d7134.chunk.css.map": "/NearWiki/static/css/2.d83d7134.chunk.css.map",
     "static/css/main.b4200ac3.chunk.css.map": "/NearWiki/static/css/main.b4200ac3.chunk.css.map",
@@ -24,6 +24,6 @@
     "static/css/2.d83d7134.chunk.css",
     "static/js/2.dfdea2e9.chunk.js",
     "static/css/main.b4200ac3.chunk.css",
-    "static/js/main.e02d715c.chunk.js"
+    "static/js/main.e44f82de.chunk.js"
   ]
 }
