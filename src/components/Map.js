@@ -23,9 +23,11 @@ class Map extends React.Component {
             currLandmark.coordinates[0].lon
           ]
         };
+
+        // Add marker on the map only if coordinates are available
+        markers.push(currLandmarkInfo);
       }
 
-      markers.push(currLandmarkInfo);
       return null;
     });
 

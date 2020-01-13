@@ -8,14 +8,12 @@ class NearWiki extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      landmarks: {},
-      landmarkMarkers: []
+      landmarks: {}
     };
   }
 
   componentDidMount() {
     this.getLandmarksNearUserLocation();
-    this.getLandmarkMarkers();
   }
 
   getLandmarksNearUserLocation() {
@@ -52,12 +50,6 @@ class NearWiki extends Component {
       .catch(function(error) {
         console.log(error);
       });
-  }
-
-  getLandmarkMarkers() {
-    this.setState({
-      landmarkMarkers: []
-    });
   }
 
   render() {
