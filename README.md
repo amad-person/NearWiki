@@ -10,6 +10,6 @@ Clone this repository, `cd` into it, and run `yarn install` to install the depen
 
 This project:
 
-1. Uses the [Mediawiki API](https://www.mediawiki.org/wiki/API:Main_page).
+1. Uses the [MediaWiki API](https://www.mediawiki.org/wiki/API:Main_page).
 2. Looks great because of [Semantic UI React](https://react.semantic-ui.com/) and illustrations from [unDraw](https://undraw.co/illustrations).
 3. Was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
